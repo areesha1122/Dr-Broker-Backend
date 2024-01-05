@@ -1,0 +1,45 @@
+// src/validators/checklistBothSide.validator.ts
+
+import Joi from 'joi';
+
+const checklistBothSideValidation = Joi.object({
+  inspectorName: Joi.string().trim(),
+  inspectionDateTime: Joi.string(),
+  cL100TermiteInspectorName: Joi.string().trim(),
+  cL100TermiteInspectionDateTime: Joi.string(),
+  electric: Joi.string(),
+  gas: Joi.string(),
+  water: Joi.string(),
+  sewer: Joi.string(),
+  internet: Joi.string(),
+  ratifiedSalesContract: Joi.boolean(),
+  scheduleInspection: Joi.boolean(),
+  mlsPropertypending: Joi.boolean(),
+  sendToClosing: Joi.boolean(),
+  handleEarnestMoney: Joi.boolean(),
+  repairAddendumOrTermination: Joi.boolean(),
+  orderCL100Termite: Joi.boolean(),
+  checkClosingAttorney: Joi.boolean(),
+  shareRepairReceipts: Joi.boolean(),
+  checkAppraisalStatus: Joi.boolean(),
+  sendCommissionInstructions: Joi.boolean(),
+  orderHomeWarranty: Joi.boolean(),
+  confirmTRID: Joi.boolean(),
+  reviewClosingDisclosure: Joi.boolean(),
+  confirmUtilitiesScheduled: Joi.boolean(),
+  scheduleFinalWalkthrough: Joi.boolean(),
+  getClosingGift: Joi.boolean(),
+  shareLocationKeys: Joi.boolean(),
+  requestReview: Joi.boolean(),
+  updateMLSClosed: Joi.boolean(),
+  saveClosingDocuments: Joi.boolean(),
+  uploadDocumentsToBrokerage: Joi.boolean(),
+  remindSellerInsuranceRefund: Joi.boolean(),
+  askSellerReceivedInsuranceRefund: Joi.boolean(),
+  checkIn3Months: Joi.boolean(),
+  checkIn6Months: Joi.boolean(),
+  checkIn9Months: Joi.boolean(),
+  anniversaryGift: Joi.boolean(),
+});
+
+export default checklistBothSideValidation;
